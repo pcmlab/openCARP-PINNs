@@ -1,0 +1,20 @@
+data:
+      core_name: '/data/home/exx975/'
+      v_file_name: 'O-PINNs/O-PINNs/Data/AP/Planar/vm.igb' #'O-PINNs/O-PINNs/Data/AP/Planar/vm.igb' #'O-PINNs/O-PINNs/Data/MS/Single_Corner/vm.igb' ##'igb File name for input voltage data')
+      w_file_name: 'O-PINNs/O-PINNs/Data/AP/Planar/V.igb'  #'O-PINNs/O-PINNs/Data/AP/Planar/V.igb'  #'O-PINNs/O-PINNs/Data/MS/Single_Corner/h.igb' ##igb File name for W input data') 
+      pt_file_name: 'O-PINNs/O-PINNs/Data/AP/Mesh/Square_i' #'O-PINNs/O-PINNs/Data/AP/Mesh/Square_i'  #'O-PINNs/O-PINNs/Data/MS/Single_Corner/Square_i' ##pt File name for coordinates of input nodes, but please do not put .pts at the end')
+      scenario_name: 'Planar' ##Single_Corner, Double_Corner, Planar
+      ionic_model_name: 'AP'
+      noise: False ##'Add noise to the data')
+      w_input: False ##'Add W to the model input data')
+      inverse: False ##'Solve the inverse problem, specify variables to predict (e.g. a / ad / abd')
+      heter: False ##'Predict heterogeneity - only in 2D')    
+      plot: True ##'Create and save plots')
+      animation: True ##'Create and save 2D Animation')
+
+#python /path/to/main.py -m name_of_output_files -vf /path/to/vm.igb -wf /path/to/V.igb -ptf /path/to/Square1x_i -a -p
+#python /data/home/exx975/7_MSPINNs/main.py -m t703_MSPINNs -vf /data/home/exx975/7_MSPINNs/8data/vm.igb -hf /data/home/exx975/7_MSPINNs/8data/h.igb -ptf /data/home/exx975/7_MSPINNs/8data/Square_i -a -p
+
+#python main.py -m test -vf /home/alex/Documents/docs/projects/PINNs/OpenCARP-PINNs-main/Data/Planer/vm.igb -wf /home/alex/Documents/docs/projects/PINNs/OpenCARP-PINNs-main/Data/Planer/V.igb -ptf /home/alex/Documents/docs/projects/PINNs/OpenCARP-PINNs-main/Data/Mesh/Square_i -a -p
+
+#/data/home/exx975/PINNs/config_version/main.py -m 3_Apr -vf /data/home/exx975/PINNs/config_version/Data/Double_Corner/vm.igb -wf /data/home/exx975/PINNs/config_version/Data/Double_Corner/V.igb -ptf /data/home/exx975/PINNs/config_version/Data/Mesh/Square_i
